@@ -1,7 +1,13 @@
-Shape.java
+package pt.up.fe.ldts.example2;
+import pt.up.fe.ldts.example2.GraphicFramework;
+
 public abstract class Shape {
     protected double x;
     protected double y;
+    public Shape(){
+        this.x = 0;
+        this.y = 0;
+    }
     public Shape(double x, double y) {
         this.x = x;
         this.y = y;
