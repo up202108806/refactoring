@@ -9,16 +9,17 @@ class TreeSpockTest extends Specification {
 
     def setup() {
         def sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss")
+        // sdf.setTimeZone(TimeZone.getTimeZone("WEST"));
         date = sdf.parse("31-08-2002 10:20:56")
         tree = new Tree(date, "41.177772696363114", "-8.59843522310257", "FEUP")
     }
 
     def 'Tree Creation'() {
         expect:
-            tree.plantedAt == date
-            tree.locationLatitude == "41.177772696363114"
-            tree.locationLongitude == "-8.59843522310257"
-            tree.locationName == "FEUP"
+            tree.getDate() == date
+            tree.getLocation().getLatitude() == "41.177772696363114"
+            tree.getLocation().getLongitude() == "-8.59843522310257"
+            tree.getLocation().getName() == "FEUP"
     }
 
     def 'Tree Set Location'() {
@@ -26,10 +27,10 @@ class TreeSpockTest extends Specification {
             tree.setLocation("loclat", "loclon", "locname")
 
         expect:
-            tree.plantedAt == date
-            tree.locationLatitude == "loclat"
-            tree.locationLongitude == "loclon"
-            tree.locationName == "locname"
+            tree.getDate() == date
+            tree.getLocation().getLatitude() == "loclat"
+            tree.getLocation().getLongitude() == "loclon"
+            tree.getLocation().getName() == "locname"
     }
 
     def 'Tree to String'() {
@@ -77,8 +78,8 @@ class TreeSpockTest extends Specification {
     def 'Next Appraisal Not Overdue'() {
         given:
             def calendar = Calendar.getInstance()
-            calendar.setTime(new Date());
-            calendar.add(Calendar.MONTH, -1);
+            calendar.setTime(new Date())
+            calendar.add(Calendar.MONTH, -1)
 
         when:
             def appraisalDate = calendar.getTime()

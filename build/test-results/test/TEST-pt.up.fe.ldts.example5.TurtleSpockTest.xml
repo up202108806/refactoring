@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pt.up.fe.ldts.example5.TurtleSpockTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2022-11-23T15:50:16" hostname="FEUP-B306D15" time="0.351">
+<testsuite name="pt.up.fe.ldts.example5.TurtleSpockTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2022-11-23T22:05:51" hostname="PEDROLIMA" time="0.552">
   <properties/>
-  <testcase name="Rotate Left" classname="pt.up.fe.ldts.example5.TurtleSpockTest" time="0.343">
-    <failure message="Condition not satisfied:&#10;&#10;new TurtleWest() == turtle.getDirection()&#10;|                |  |      |&#10;|                |  |      &lt;pt.up.fe.ldts.example5.TurtleWest@343eb53a turtle=null&gt;&#10;|                |  &lt;pt.up.fe.ldts.example5.Turtle@662e5977 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleWest@343eb53a&gt;&#10;|                false&#10;&lt;pt.up.fe.ldts.example5.TurtleWest@3cdd7215 turtle=null&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+  <testcase name="Rotate Left" classname="pt.up.fe.ldts.example5.TurtleSpockTest" time="0.543">
+    <failure message="Condition not satisfied:&#10;&#10;new TurtleWest() == turtle.getDirection()&#10;|                |  |      |&#10;|                |  |      &lt;pt.up.fe.ldts.example5.TurtleWest@225ec0f9 turtle=null&gt;&#10;|                |  &lt;pt.up.fe.ldts.example5.Turtle@61309798 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleWest@225ec0f9&gt;&#10;|                false&#10;&lt;pt.up.fe.ldts.example5.TurtleWest@57b13391 turtle=null&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
 
 new TurtleWest() == turtle.getDirection()
 |                |  |      |
-|                |  |      &lt;pt.up.fe.ldts.example5.TurtleWest@343eb53a turtle=null&gt;
-|                |  &lt;pt.up.fe.ldts.example5.Turtle@662e5977 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleWest@343eb53a&gt;
+|                |  |      &lt;pt.up.fe.ldts.example5.TurtleWest@225ec0f9 turtle=null&gt;
+|                |  &lt;pt.up.fe.ldts.example5.Turtle@61309798 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleWest@225ec0f9&gt;
 |                false
-&lt;pt.up.fe.ldts.example5.TurtleWest@3cdd7215 turtle=null&gt;
+&lt;pt.up.fe.ldts.example5.TurtleWest@57b13391 turtle=null&gt;
 
 	at pt.up.fe.ldts.example5.TurtleSpockTest.Rotate Left(TurtleSpockTest.groovy:15)
 </failure>
   </testcase>
-  <testcase name="Rotate Right" classname="pt.up.fe.ldts.example5.TurtleSpockTest" time="0.004">
-    <failure message="Condition not satisfied:&#10;&#10;new TurtleEast() == turtle.getDirection()&#10;|                |  |      |&#10;|                |  |      &lt;pt.up.fe.ldts.example5.TurtleEast@50127466 turtle=null&gt;&#10;|                |  &lt;pt.up.fe.ldts.example5.Turtle@8ab0c55 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleEast@50127466&gt;&#10;|                false&#10;&lt;pt.up.fe.ldts.example5.TurtleEast@2aabf356 turtle=null&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+  <testcase name="Rotate Right" classname="pt.up.fe.ldts.example5.TurtleSpockTest" time="0.006">
+    <failure message="Condition not satisfied:&#10;&#10;new TurtleEast() == turtle.getDirection()&#10;|                |  |      |&#10;|                |  |      &lt;pt.up.fe.ldts.example5.TurtleEast@3d98c4b7 turtle=null&gt;&#10;|                |  &lt;pt.up.fe.ldts.example5.Turtle@8fd5c95 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleEast@3d98c4b7&gt;&#10;|                false&#10;&lt;pt.up.fe.ldts.example5.TurtleEast@13562cd4 turtle=null&gt;&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
 
 new TurtleEast() == turtle.getDirection()
 |                |  |      |
-|                |  |      &lt;pt.up.fe.ldts.example5.TurtleEast@50127466 turtle=null&gt;
-|                |  &lt;pt.up.fe.ldts.example5.Turtle@8ab0c55 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleEast@50127466&gt;
+|                |  |      &lt;pt.up.fe.ldts.example5.TurtleEast@3d98c4b7 turtle=null&gt;
+|                |  &lt;pt.up.fe.ldts.example5.Turtle@8fd5c95 row=5 column=5 direction=pt.up.fe.ldts.example5.TurtleEast@3d98c4b7&gt;
 |                false
-&lt;pt.up.fe.ldts.example5.TurtleEast@2aabf356 turtle=null&gt;
+&lt;pt.up.fe.ldts.example5.TurtleEast@13562cd4 turtle=null&gt;
 
 	at pt.up.fe.ldts.example5.TurtleSpockTest.Rotate Right(TurtleSpockTest.groovy:48)
 </failure>
