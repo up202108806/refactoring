@@ -9,10 +9,10 @@ public class TurtleTest {
     @Test
     public void testRotateLeft() {
         Turtle turtle = new Turtle(5, 5, new TurtleNorth());
-        turtle.execute('L'); assertEquals(new TurtleWest(), turtle.getDirection());
-        turtle.execute('L'); assertEquals(new TurtleSouth(), turtle.getDirection());
-        turtle.execute('L'); assertEquals(new TurtleEast(), turtle.getDirection());
-        turtle.execute('L'); assertEquals(new TurtleNorth(), turtle.getDirection());
+        turtle.execute('L'); assertEquals(TurtleWest.class, turtle.getDirection().getClass());
+        turtle.execute('L'); assertEquals(TurtleSouth.class, turtle.getDirection().getClass());
+        turtle.execute('L'); assertEquals(TurtleEast.class, turtle.getDirection().getClass());
+        turtle.execute('L'); assertEquals(TurtleNorth.class, turtle.getDirection().getClass());
         assertEquals(5, turtle.getRow());
         assertEquals(5, turtle.getColumn());
     }
@@ -20,10 +20,10 @@ public class TurtleTest {
     @Test
     public void testRotateRight() {
         Turtle turtle = new Turtle(5, 5, new TurtleNorth());
-        turtle.execute('R'); assertEquals(new TurtleEast(), turtle.getDirection());
-        turtle.execute('R'); assertEquals(new TurtleSouth(), turtle.getDirection());
-        turtle.execute('R'); assertEquals(new TurtleWest(), turtle.getDirection());
-        turtle.execute('R'); assertEquals(new TurtleNorth(), turtle.getDirection());
+        turtle.execute('R'); assertEquals(TurtleEast.class, turtle.getDirection().getClass());
+        turtle.execute('R'); assertEquals(TurtleSouth.class, turtle.getDirection().getClass());
+        turtle.execute('R'); assertEquals(TurtleWest.class, turtle.getDirection().getClass());
+        turtle.execute('R'); assertEquals(TurtleNorth.class, turtle.getDirection().getClass());
         assertEquals(5, turtle.getRow());
         assertEquals(5, turtle.getColumn());
     }

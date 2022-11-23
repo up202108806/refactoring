@@ -12,25 +12,25 @@ class TurtleSpockTest extends Specification {
             turtle.execute('L' as char);
 
         then:
-            new TurtleWest() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleWest.class;
 
         and:
             turtle.execute('L' as char);
 
         then:
-            new TurtleSouth() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleSouth.class;
 
         and:
             turtle.execute('L' as char);
 
         then:
-            new TurtleEast() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleEast.class;
 
         and:
             turtle.execute('L' as char);
 
         then:
-            new TurtleNorth() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleNorth.class;
 
         and:
             5 == turtle.getRow()
@@ -45,25 +45,25 @@ class TurtleSpockTest extends Specification {
             turtle.execute('R' as char);
 
         then:
-            new TurtleEast() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleEast.class;
 
         and:
             turtle.execute('R' as char);
 
         then:
-            new TurtleSouth() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleSouth.class;
 
         and:
             turtle.execute('R' as char);
 
         then:
-            new TurtleWest() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleWest.class;
 
         and:
             turtle.execute('R' as char);
 
         then:
-            new TurtleNorth() == turtle.getDirection()
+            turtle.getDirection().getClass() == TurtleNorth.class;
 
         and:
             5 == turtle.getRow()

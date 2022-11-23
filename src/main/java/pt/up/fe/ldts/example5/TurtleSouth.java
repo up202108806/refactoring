@@ -5,10 +5,14 @@ public class TurtleSouth extends TurtleState {
         turtle.setRow(turtle.getRow()+1);
     }
     public void rotateRight(){
-        turtle.setDirection(new TurtleWest());
+        TurtleState newState = new TurtleWest();
+        newState.setTurtle(turtle);
+        turtle.setDirection(newState);
     }
     public void rotateLeft(){
-        turtle.setDirection(new TurtleEast());
+        TurtleState newState = new TurtleEast();
+        newState.setTurtle(turtle);
+        turtle.setDirection(newState);
     }
 }
 
